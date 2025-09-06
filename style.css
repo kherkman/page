@@ -1,0 +1,301 @@
+/* style.css - Deep Space Theme */
+:root {
+    --primary-galaxy-dark: #0d0c1d; /* Very dark blue/purple for deep space */
+    --secondary-nebula-blue: #2a006c; /* Darker blue/purple for main elements */
+    --accent-stellar-glow: #e0b0ff; /* Light purple/pink for highlights and glows */
+    --text-star-white: #e0e0e0; /* Off-white for readability */
+    --background-deep-space: #05030f; /* Even darker base background */
+    --card-background-nebula: #1a023c; /* Slightly lighter purple for cards */
+    --border-radius: 12px;
+    --box-shadow-depth: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(160, 0, 255, 0.3); /* Deeper shadows with a purple glow */
+    --link-item-shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(224, 176, 255, 0.6); /* Stronger hover glow */
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: var(--background-deep-space);
+    /* Starfield background effect */
+    background-image:
+        radial-gradient(ellipse at bottom, #1d0033 0%, #05030f 100%),
+        url('data:image/svg+xml;base64,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');
+    background-size: cover, 728px 728px; /* Cover for the nebula, fixed for stars */
+    animation: moveStars 100s linear infinite; /* Animates the star background */
+    color: var(--text-star-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@keyframes moveStars {
+    from { background-position: 0 0, 0 0; }
+    to { background-position: 0 0, 728px 728px; } /* Moves the star pattern */
+}
+
+header {
+    background-color: var(--primary-galaxy-dark);
+    color: #ffffff;
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: var(--box-shadow-depth);
+    border-bottom: 2px solid var(--accent-stellar-glow);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.8rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px var(--accent-stellar-glow), 0 0 30px rgba(224, 176, 255, 0.4); /* Glowing text */
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: var(--text-star-white);
+    text-shadow: 0 0 8px rgba(224, 176, 255, 0.3);
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: var(--secondary-nebula-blue); /* Deeper blue/purple for main section */
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-depth);
+    border: 1px solid rgba(224, 176, 255, 0.2); /* Subtle glow border */
+}
+
+.category {
+    margin-bottom: 3.5rem;
+    padding: 1.8rem;
+    background-color: var(--card-background-nebula);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(224, 176, 255, 0.1);
+}
+
+.category h2 {
+    color: var(--accent-stellar-glow);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid var(--accent-stellar-glow);
+    padding-bottom: 1rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(224, 176, 255, 0.6);
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.link-item {
+    background-color: var(--primary-galaxy-dark); /* Darker for individual items */
+    padding: 22px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 8px rgba(160, 0, 255, 0.2); /* Initial subtle glow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid rgba(224, 176, 255, 0.08); /* Faint border */
+}
+
+.link-item:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: var(--link-item-shadow-hover);
+    background-color: #2e0050; /* Slightly lighter purple on hover */
+    border-color: var(--accent-stellar-glow); /* Border glows on hover */
+}
+
+.link-item h3 {
+    color: var(--accent-stellar-glow);
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(224, 176, 255, 0.4);
+    padding-bottom: 10px;
+    text-shadow: 0 0 6px rgba(224, 176, 255, 0.5);
+}
+
+.link-item p {
+    font-size: 1rem;
+    color: var(--text-star-white);
+    flex-grow: 1;
+}
+
+.ad-space {
+    background-color: var(--secondary-nebula-blue);
+    color: var(--text-star-white);
+    padding: 3.5rem 2rem;
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-depth);
+    border: 2px dashed var(--accent-stellar-glow);
+}
+
+.ad-space h3 {
+    color: var(--accent-stellar-glow);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(224, 176, 255, 0.6);
+}
+
+.ad-space p {
+    font-size: 1.2rem;
+    color: var(--text-star-white);
+    opacity: 0.8;
+}
+
+footer {
+    background-color: var(--primary-galaxy-dark);
+    color: #908da0;
+    text-align: center;
+    padding: 1.8rem 0;
+    margin-top: 50px;
+    font-size: 0.95rem;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(224, 176, 255, 0.1);
+}
+
+/* iframe overlay styles */
+.iframe-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95); /* Darker, more opaque overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.iframe-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.iframe-container {
+    position: relative;
+    width: 90vw; /* Take 90% of viewport width */
+    height: 90vh; /* Take 90% of viewport height */
+    background-color: var(--primary-galaxy-dark); /* Match theme */
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-depth);
+    border: 2px solid var(--accent-stellar-glow);
+    display: flex;
+    flex-direction: column;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: #000; /* Black background for iframe loading/empty state */
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent-stellar-glow);
+    color: var(--primary-galaxy-dark);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    z-index: 1001; /* Above iframe */
+    box-shadow: 0 0 10px rgba(224, 176, 255, 0.8);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #ffffff; /* Brighter on hover */
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
+    main {
+        padding: 1.5rem;
+        margin: 20px auto;
+    }
+    .category {
+        padding: 1.2rem;
+    }
+    .category h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .link-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .link-item h3 {
+        font-size: 1.6rem;
+    }
+    .link-item p {
+        font-size: 0.95rem;
+    }
+    .ad-space {
+        padding: 2.5rem 1.5rem;
+        margin: 20px auto;
+    }
+    .iframe-container {
+        width: 95vw;
+        height: 95vh;
+    }
+    .close-button {
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .category h2 {
+        font-size: 2rem;
+    }
+    .ad-space h3 {
+        font-size: 2rem;
+    }
+}
