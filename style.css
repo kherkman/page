@@ -58,6 +58,41 @@ header p {
     text-shadow: 0 0 8px rgba(224, 176, 255, 0.3);
 }
 
+/* New styles for the navigation links */
+.main-nav {
+    margin-top: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between links */
+}
+
+.main-nav a {
+    color: var(--accent-stellar-glow);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: rgba(224, 176, 255, 0.1); /* Subtle background on hover */
+    color: #ffffff;
+    box-shadow: 0 0 10px var(--accent-stellar-glow); /* Glow effect */
+    border-color: var(--accent-stellar-glow);
+    outline: none; /* Remove default focus outline */
+}
+
+
 main {
     flex-grow: 1;
     padding: 2rem;
@@ -247,6 +282,14 @@ footer {
     header p {
         font-size: 1.2rem;
     }
+    .main-nav ul {
+        flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+    .main-nav a {
+        font-size: 1.1rem;
+        padding: 6px 10px;
+    }
     main {
         padding: 1.5rem;
         margin: 20px auto;
@@ -290,6 +333,13 @@ footer {
         font-size: 2.2rem;
     }
     header p {
+        font-size: 1rem;
+    }
+    .main-nav ul {
+        flex-direction: column; /* Stack links vertically on very small screens */
+        gap: 10px;
+    }
+    .main-nav a {
         font-size: 1rem;
     }
     .category h2 {
